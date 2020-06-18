@@ -1,3 +1,10 @@
 fonts
 https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@700;900&display=swap
 https://fonts.googleapis.com/css2?family=Viga&display=swap
+green1: #0DCA71
+orange1: #FDCB02
+orange2: #E07037
+#dc4b4b
+#0cba68
+#fdae02
+#fdcb02
