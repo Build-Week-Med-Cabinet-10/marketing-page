@@ -143,7 +143,6 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #420;
-  background-image: url('/img/kush-bg02.jpg');
 }
 h1,
 h2,
@@ -153,7 +152,7 @@ h5 {
   font-family: 'Viga', sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h2 {
   font-size: 2.6rem;
@@ -173,30 +172,41 @@ img {
   height: auto;
 }
 #mainContainer {
-  width: 90vw;
-  max-width: 100rem;
+  width: 100vw;
   margin-top: 1rem;
   box-shadow: 0.5rem 0.5rem 1rem #000;
   border: 2px outset #070;
 }
+@media (min-width: 800px) {
+  #mainContainer {
+    width: 90vw;
+    max-width: 100rem;
+  }
+}
 header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   background-color: #0cba68;
   padding: 1rem;
 }
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+}
 header > #headerLogo {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 header > #headerLogo > #logo {
   width: 4rem;
 }
 header > #headerLogo > h1 {
   color: #420;
-  white-space: nowrap;
 }
 header > nav {
   font-size: 1.6rem;
@@ -218,10 +228,9 @@ header > nav > a:hover {
   background-color: rgba(0, 0, 0, 0);
   color: #FDCB02;
   box-shadow: 0 0 1rem inset #FDCB02, 0 0 1rem #FDCB02;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
 }
 #bannerImage {
-  background-image: url('/img/cta.jpeg');
   background-size: cover;
   background-position: center;
   height: 30rem;
@@ -246,7 +255,7 @@ header > nav > a:hover {
   background-color: rgba(0, 0, 0, 0);
   color: #FDCB02;
   box-shadow: 0 0 1rem inset #FDCB02, 0 0 1rem #FDCB02;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
 }
 #lowerContent {
   padding: 0.5rem;
@@ -257,9 +266,15 @@ header > nav > a:hover {
 }
 .contentContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   padding: 0.5rem;
+}
+@media (min-width: 600px) {
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .contentContainer > .contentBox {
   flex-grow: 1;
@@ -293,5 +308,5 @@ header > nav > a:hover {
   background-color: rgba(0, 0, 0, 0);
   color: #FDCB02;
   box-shadow: 0 0 1rem inset #FDCB02, 0 0 1rem #FDCB02;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
 }

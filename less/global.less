@@ -16,7 +16,7 @@ body {
     .flexCol();
     align-items: center;
     background-color: #colors[fourTwenty];
-    background-image: url('/img/kush-bg02.jpg');
+    // background-image: url('/img/kush-bg02.jpg');
     // 'kush-bg0x.jpg' modified from: https://leafly-cms-production.imgix.net/wp-content/uploads/2017/02/01113652/kush.jpg
 }
 
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h2 {
@@ -49,8 +49,11 @@ img {
     height: auto;
 }
 #mainContainer {
-    width: 90vw;
-    max-width: 100rem;
+    width: 100vw;
+    @media @desktopUp {
+        width: 90vw;
+        max-width: 100rem;
+    }
     margin-top: 1rem;
     box-shadow: 0.5rem 0.5rem 1rem #000;
     border: 2px outset #070;
