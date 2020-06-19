@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Viga', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -142,14 +142,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #113322;
+  background-color: #420;
+  background-image: url('/img/kush-bg02.jpg');
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Viga', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -163,8 +164,8 @@ h3 {
   padding-bottom: 10px;
 }
 p {
-  line-height: 1.4;
-  font-size: 1.4rem;
+  line-height: 1.6;
+  font-size: 1.6rem;
   padding-bottom: 0.1rem;
 }
 img {
@@ -172,49 +173,125 @@ img {
   height: auto;
 }
 #mainContainer {
-  max-width: 60rem;
+  width: 90vw;
+  max-width: 100rem;
+  margin-top: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem #000;
+  border: 2px outset #070;
 }
 header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #0DCA71;
+  background-color: #0cba68;
   padding: 1rem;
+}
+header > #headerLogo {
+  display: flex;
+  flex-direction: row;
+}
+header > #headerLogo > #logo {
+  width: 4rem;
+}
+header > #headerLogo > h1 {
+  color: #420;
+  white-space: nowrap;
 }
 header > nav {
   font-size: 1.6rem;
-  width: 12rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 header > nav > a {
+  background-color: #FDCB02;
   text-decoration: none;
-  background-color: #0DCA71;
-  padding: 0.5rem;
-  border-radius: 50%;
-  color: #FDCB02;
-  transition: color 1s, background-color 1s;
-  box-shadow: 0 0 0.5rem #0DCA71;
+  padding: 0.8rem;
+  margin: 0 0.5rem;
+  border-radius: 0.3rem;
+  color: #420;
+  box-shadow: 0 0 0 inset #FDCB02, 0.2rem 0.2rem 0.5rem black;
+  transition: color 1s, background-color 1s, box-shadow 1s, border-radius 1s;
 }
 header > nav > a:hover {
-  color: #0DCA71;
-  background-color: #FDCB02;
+  background-color: rgba(0, 0, 0, 0);
+  color: #FDCB02;
+  box-shadow: 0 0 1rem inset #FDCB02, 0 0 1rem #FDCB02;
+  border-radius: 1rem;
 }
-header #logo {
-  width: 4rem;
-}
-#contentContainer {
-  background-color: #FDCB02;
+#bannerImage {
+  background-image: url('/img/cta.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+}
+#bannerImage > .bigButton {
+  background-color: #FDCB02;
+  text-decoration: none;
+  padding: 0.8rem;
+  margin: 0 0.5rem;
+  border-radius: 0.3rem;
+  color: #420;
+  box-shadow: 0 0 0 inset #FDCB02, 0.2rem 0.2rem 0.5rem black;
+  transition: color 1s, background-color 1s, box-shadow 1s, border-radius 1s;
+  font-size: 3rem;
+  padding: 2rem;
+}
+#bannerImage > .bigButton:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #FDCB02;
+  box-shadow: 0 0 1rem inset #FDCB02, 0 0 1rem #FDCB02;
+  border-radius: 1rem;
+}
+#lowerContent {
+  padding: 0.5rem;
+  background: linear-gradient(#0DCA71 0%, #AF66CC 100%);
+  color: #420;
+  display: flex;
+  flex-direction: column;
+}
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding: 0.5rem;
 }
-#contentContainer > .contentBox {
-  margin: 0.5rem;
+.contentContainer > .contentBox {
+  flex-grow: 1;
+  margin: 0.5rem 0.5rem 0 0.5rem;
   padding: 0.5rem;
-  background-color: #E07037;
+  background-color: rgba(200, 200, 200, 0.4);
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
+}
+.contentContainer > .contentBox > p,
+.contentContainer > .contentBox h2 {
+  text-align: center;
+}
+.contentContainer > .contentBoxWide {
+  width: 100%;
+}
+.contentContainer > .contentBoxWide .bigButton {
+  background-color: #FDCB02;
+  text-decoration: none;
+  padding: 0.8rem;
+  margin: 0 0.5rem;
+  border-radius: 0.3rem;
+  color: #420;
+  box-shadow: 0 0 0 inset #FDCB02, 0.2rem 0.2rem 0.5rem black;
+  transition: color 1s, background-color 1s, box-shadow 1s, border-radius 1s;
+  font-size: 2rem;
+  line-height: 6rem;
+  box-sizing: content-box;
+}
+.contentContainer > .contentBoxWide .bigButton:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #FDCB02;
+  box-shadow: 0 0 1rem inset #FDCB02, 0 0 1rem #FDCB02;
+  border-radius: 1rem;
 }

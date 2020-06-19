@@ -2,19 +2,21 @@ header {
     .flexRow();
     align-items: center;
     justify-content: space-between;
+    >#headerLogo {
+        >#logo {
+            width: 4rem;
+        }
+        .flexRow();
+        >h1 { color: #colors[fourTwenty]; white-space: nowrap; }
+    }
     >nav {
         font-size: 1.6rem;
-        width: 12rem;
         .flexRow();
-        justify-content: space-evenly;
+        justify-content: flex-end;
         >a {
-            text-decoration: none;
             .button();
         }
     }
-    background-color: #colors[green1];
+    background-color: #colors[green2];
     padding: 1rem;
-    #logo {
-        width: 4rem;
-    }
 }

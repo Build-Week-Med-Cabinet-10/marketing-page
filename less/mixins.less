@@ -7,14 +7,19 @@
     flex-direction: row;
 }
 .button() {
-    background-color: #colors[green1];
-    padding: 0.5rem;
-    border-radius: 50%;
-    color: #colors[yellow1];
-    transition: color 1s, background-color 1s;
-    box-shadow: 0 0 0.5rem #colors[green1];
+    background-color: #colors[yellow1];
+    text-decoration: none;
+    padding: 0.8rem;
+    margin: 0 0.5rem;
+    border-radius: 0.3rem;
+    color: #colors[fourTwenty];
+    box-shadow: 0 0 0 inset #colors[yellow1], 0.2rem 0.2rem 0.5rem black;
+    transition: color 1s, background-color 1s, box-shadow 1s, border-radius 1s;
     &:hover {
-        color: #colors[green1];
-        background-color: #colors[yellow1];
+        // background-color: #colors[green1];
+        background-color: #colors[clear];
+        color: #colors[yellow1];
+        box-shadow: 0 0 1rem inset #colors[yellow1], 0 0 1rem #colors[yellow1];
+        border-radius: 1rem;
     }
 }
