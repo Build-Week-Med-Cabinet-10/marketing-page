@@ -1,3 +1,5 @@
+rubric: https://www.notion.so/a46116338c574ad49d10a142cd79ed57?v=aece62797cea420b861d4913051d0761
+
 fonts
 https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@700;900&display=swap
 https://fonts.googleapis.com/css2?family=Viga&display=swap
