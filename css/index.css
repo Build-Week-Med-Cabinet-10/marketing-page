@@ -157,16 +157,13 @@ h1 {
 }
 h2 {
   font-size: 2.6rem;
-  padding-bottom: 10px;
 }
 h3 {
   font-size: 2.2rem;
-  padding-bottom: 10px;
 }
 p {
   line-height: 1.6;
   font-size: 1.6rem;
-  padding-bottom: 0.1rem;
 }
 img {
   max-width: 100%;
@@ -174,14 +171,17 @@ img {
 }
 #mainContainer {
   width: 100vw;
-  margin-top: 1rem;
-  box-shadow: 0.5rem 0.5rem 1rem #000;
-  border: 2px outset #070;
+  margin-top: 0;
+  border: none;
+  box-shadow: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   #mainContainer {
     width: 90vw;
     max-width: 100rem;
+    margin-top: 1rem;
+    border: 2px outset #070;
+    box-shadow: 0.5rem 0.5rem 1rem #000;
   }
 }
 header {
@@ -192,7 +192,7 @@ header {
   background-color: #0cba68;
   padding: 1rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   header {
     display: flex;
     flex-direction: row;
@@ -272,14 +272,14 @@ header > nav > a:hover {
   justify-content: center;
   padding: 0.5rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   .contentContainer {
     display: flex;
     flex-direction: row;
   }
 }
 .contentContainer > .contentBox {
-  width: 100%;
+  flex-grow: 1;
   margin: 0.5rem 0.5rem 0 0.5rem;
   padding: 0.5rem;
   background-color: rgba(200, 200, 200, 0.4);
@@ -289,14 +289,6 @@ header > nav > a:hover {
 .contentContainer > .contentBox > p,
 .contentContainer > .contentBox h2 {
   text-align: center;
-}
-@media (min-width: 600px) {
-  .contentContainer > .contentBox {
-    width: 33%;
-  }
-}
-.contentContainer > .contentBoxWide {
-  width: 100%;
 }
 .contentContainer > .contentBoxWide .bigButton {
   background-color: #FDCB02;
@@ -309,7 +301,6 @@ header > nav > a:hover {
   transition: color 1s, background-color 1s, box-shadow 1s, border-radius 1s;
   font-size: 2rem;
   line-height: 6rem;
-  box-sizing: content-box;
 }
 .contentContainer > .contentBoxWide .bigButton:hover {
   background-color: rgba(0, 0, 0, 0);

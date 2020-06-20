@@ -27,10 +27,7 @@
     padding: 0.5rem;
     >.contentBox {
         >p,h2 { text-align: center; }
-        width: 100%;
-        @media @tabletUp {
-            width: 33%;
-        }
+        flex-grow: 1;
         margin: 0.5rem 0.5rem 0 0.5rem;
         padding: 0.5rem;
         background-color: rgba(200,200,200,0.4);
@@ -38,12 +35,10 @@
         box-shadow: 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.4);
     }
     >.contentBoxWide {
-        width: 100%;
         .bigButton {
             .button();
             font-size: 2rem;
             line-height: 6rem;
-            box-sizing: content-box;
         }
     }
 }
