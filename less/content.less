@@ -1,5 +1,5 @@
 #bannerImage {
-    // background-image: url('/img/cta.jpeg');
+    background-image: url('/img/cta.jpeg');
     background-size: cover;
     background-position: center;
     height: 30rem;
@@ -27,7 +27,10 @@
     padding: 0.5rem;
     >.contentBox {
         >p,h2 { text-align: center; }
-        flex-grow: 1;
+        width: 100%;
+        @media @tabletUp {
+            width: 33%;
+        }
         margin: 0.5rem 0.5rem 0 0.5rem;
         padding: 0.5rem;
         background-color: rgba(200,200,200,0.4);
