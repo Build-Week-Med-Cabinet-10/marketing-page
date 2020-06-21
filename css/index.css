@@ -259,7 +259,7 @@ header > nav > a:hover {
   box-shadow: 0 0 1rem inset #FDCB02, 0 0 1rem #FDCB02;
   border-radius: 0.3rem;
 }
-#lowerContent {
+.lowerContent {
   padding: 0.5rem;
   background: linear-gradient(#0DCA71 0%, #AF66CC 100%);
   color: #420;
