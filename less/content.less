@@ -24,10 +24,18 @@
         .flexRow();
     }
     justify-content: center;
+    flex-wrap: wrap;
     padding: 0.5rem;
     >.contentBox {
         >p,h2 { text-align: center; }
-        flex-grow: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media @tabletUp {
+            max-width: calc(33% - 2rem);
+        }
+        @media @desktopUp {
+            max-width: calc(25% - 3rem);
+        }
         margin: 0.5rem 0.5rem 0 0.5rem;
         padding: 0.5rem;
         background-color: rgba(200,200,200,0.4);
@@ -40,5 +48,7 @@
             font-size: 2rem;
             line-height: 6rem;
         }
+        max-width: unset;
+        flex-grow: 1;
     }
 }

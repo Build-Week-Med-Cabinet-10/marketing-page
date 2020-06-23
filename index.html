@@ -13,7 +13,7 @@
     <div id="mainContainer">
         <header>
             <div id="headerLogo">
-                <img id="logo" src="img/weed.svg">
+                <img id="logo" src="img/weed.svg" alt="MED CABINET logo, a colorful leaf">
                 <h1>MED CABINET</h1>
             </div>
             <nav>
@@ -21,10 +21,13 @@
                 <a href="?team" id="navItemTwo">Team</a>
             </nav>
         </header>
-        <section id="bannerImage">
+        <section id="bannerImage" aria-label="cannabis leaves held by hand wearing a surgical glove">
             <a href="https://front-end-8ogh4rvh5.vercel.app/" class="bigButton">Sign Up!</a>
         </section>
-        <article class="lowerContent" id="about">
+        <article class="lowerContent">
+
+            <!-- about section - visibility toggled with js -->
+            <span id="about">
             <div class="contentContainer">
                 <div class="contentBox contentBoxWide">
                     <h2>find the perfect strain</h2>
@@ -54,9 +57,11 @@
                     <p><a href="https://front-end-8ogh4rvh5.vercel.app/" class="bigButton">Sign Up!</a></p>
                 </div>
             </div>
-        </article>
+            </span>
+            <!-- end about section -->
 
-        <article class="lowerContent" id="team">
+            <!-- team section - visibility toggled by js -->
+            <span id="team">
             <div class="contentContainer">
                 <div class="contentBox contentBoxWide">
                     <h2>meet the team</h2>
@@ -82,13 +87,25 @@
                 <div class="contentBox">
                     <h2>Dave</h2>
                     <img src="img/davidMartinez.jpg" alt="David Martinez, data scientist">
-                    <p>David is our data scientist. His algorithms change lives.</p>
+                    <p>David is our machine learning engineer. His algorithms change lives.</p>
+                </div>
+                <div class="contentBox">
+                    <h2>Josh</h2>
+                    <img src="img/joshuaPiche.jpg" alt="Joshua Piche, data engineer">
+                    <p>Josh is our data engineer, you just won't believe what he is capable of.</p>
+                </div>
+                <div class="contentBox">
+                    <h2>James</h2>
+                    <img src="img/jamesBrennan.jpg" alt="James Brennan, front-end UI">
+                    <p>James is a user interface Rembrandt, his designs transcend what anyone thought was possible.</p>
                 </div>
                 <div class="contentBox">
                     <h2>Kevin</h2>
                     <img src="img/kevinStonge.jpg" alt="Kevin St.Onge, front-end web developer">
                     <p>Kevin built this marketing page for the project.</p>
                 </div>
+                </span>
+                <!-- end team section -->
             </div>
             <div class="contentContainer">
                 <div class="contentBox contentBoxWide">
